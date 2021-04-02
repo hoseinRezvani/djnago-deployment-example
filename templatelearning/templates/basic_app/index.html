@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends 'basic_app/basic.html' %}
+
+  {% block body_block %}
+  <div class="container">
+    <h1>WELCOME TO INDEX</h1>
+    <h2>{{ name|cut:'h'|upper }}</h2>
+    <h2>{{ age|add:'3' }}</h2>
+  </div>
+
+  {% endblock %}
+</html>
